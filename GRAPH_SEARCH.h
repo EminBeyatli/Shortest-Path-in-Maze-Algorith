@@ -53,5 +53,6 @@ void Remove_Node_From_Frontier(Node *const old_child, Queue **const frontier) ;
 
 // ==================== WRITE YOUR OPTIONAL DECLARATIONS =======================
 void Visualize_Solution(const Node *const goal_node, const State *const start, const State *const goal);
+void Print_Search_Time(double elapsed_seconds);
 
 #endif

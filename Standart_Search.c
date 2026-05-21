@@ -191,9 +191,9 @@ Node* First_GoalTest_Search_TREE(const enum METHODS method, Node *const root, St
 //______________________________________________________________________________
 Node* DepthType_Search_TREE(const enum METHODS method, Node *const root, State *const goal_state, const int Max_Level)
 {
-    static int Number_Searched_Nodes  = 0;  // The number of nodes passing goal test
-	static int Number_Generated_Nodes = 1;  // The number of generated nodes (The first one is the root) 
-	static int Number_Allocated_Nodes = 1;  // The number of nodes in memory (The first one is the root)   
+    int Number_Searched_Nodes  = 0;  // The number of nodes passing goal test
+	int Number_Generated_Nodes = 1;  // The number of generated nodes (The first one is the root) 
+	int Number_Allocated_Nodes = 1;  // The number of nodes in memory (The first one is the root)   
 	enum ACTIONS action;
     Node *node, *child; 
     Queue *frontier;

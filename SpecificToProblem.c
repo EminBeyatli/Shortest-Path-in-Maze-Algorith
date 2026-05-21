@@ -111,7 +111,8 @@ static void Select_And_Build_Maze(void)
     MAZE_COLS = MAZE_ROWS;
 
     Alloc_Maze(MAZE_ROWS, MAZE_COLS);
-    srand((unsigned)time(NULL));
+    //srand((unsigned)time(NULL)); /* random seed for different maze each run */
+    srand(15);  /* fixed seed for reproducibility */
     Build_Random_Maze();
 }
 
